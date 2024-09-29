@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/edit.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -53,33 +53,41 @@
     </header>
 
     <!-- MAIN SECTION -->
-    <main>
-      <!-- HERO SECTION -->
-      <section class="hero">
+     <section>
         <div class="container">
-          <div class="hero-content">
-            <h1>Welcome to EAU Online Voting System</h1>
-            <p>
-              Your trusted platform for student elections
-            </p>
-           <div class="note">
-            <h3>Important Instructions Before You Log In</h3>
-            <ul>
-              <li>Ensure your account is registered with your correct student information.
-              </li>
-              <li>Only registered students are allowed to vote in the election process.
-              </li>
-              <li>If you are a candidate, check your profile for additional options.
-              </li>
-              <li>Read through the election guidelines to understand the voting process.
-              </li>
-            </ul>
-           </div>
-            <a href="login.html">Login</a>
-          </div>
+            <div class="student-detail">
+                <h1>Edit Student: Ibraahim Gaas</h1>
+                
+                <form method="POST" >
+                    <div class="form-group">
+                        <label for="student-name">Student Name:</label>
+                        <input type="text" class="form-control" id="student-name" placeholder="Enter Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="faculty">Faculty:</label>
+                        <input type="text" class="form-control" id="faculty" placeholder="Enter student Faculty" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="semester">Semester:</label>
+                        <input type="number" class="form-control" id="semester" placeholder="Enter student semester" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Role:</label>
+                        <select  id="role">
+                            <option value="">Select Role</option>
+                            <option value="Student">Student</option>
+                            <option value="Admin">Admin</option>
+                            <option value="Candidate">Candidate</option>
+                        </select>
+                        </div>
+                         
+                        <button type="submit">Save Changes</button>
+                </form>
+            </div>
+
         </div>
-      </section>
-    </main>
+     </section>
+     
 
     <script src="../js/script.js"></script>
   </body>

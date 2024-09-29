@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/students.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <title>Online Voting System</title>
+  </head>
+  <body>
+    <!--  HEADER -->
+    <header>
+      <!-- NAVBAR -->
+      <nav class="container navbar">
+        <!-- Humburger -->
+        <div class="hamburger">
+          <i class="fa-solid fa-bars" data-visible="true"></i>
+          <i class="fa-solid fa-close" data-visible="false"></i>
+        </div>
+        <!-- LOGO -->
+        <div class="logo">
+          <a href="#">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJvZQDhgPT3vKRZDzePwyQ_SJAuB8RIrlcQ&s"
+              alt=""
+            />
+            <div class="text">
+              <h3>EAU</h3>
+              <span>Online Voting</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- NAVLINKS -->
+        <ul class="nav-links" data-visible="false">
+          <li><a href="dashboard.html">Dashborad</a></li>
+          <li><a href="students.html" >Students</a></li>
+          <li><a href="candidates.html">Candidates</a></li>
+          <li><a href="list_elections.html">List Elections</a></li>
+          <li><a href="vote.html">Vote</a></li>  
+          <li><a href="election_results.html">View Results</a></li> 
+          <li><a href="voting_audience.html">Vote Status</a></li> 
+          <li><a href="winner.html">Winner Vote</a></li>
+          <li><a href="profile.html">Profile</a></li> 
+          <li><a href="logout.html">Logout</a></li>    
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+     <main>
+      <section class="students">
+        <div class="container">
+          <div class="student-list">
+            <h1>Student List</h1>
+            <!-- Search And Filter -->
+              <div class="search-filter">
+                <input type="text" id="search" placeholder="Search by name or email" />
+                <select id="filter-by-faculty">
+                  <option >Filter by faculty</option>
+                   <option value="Business and Law">Business and Law</option>
+                  <option value="Computer Science">Computer Science</option>
+                  <option value="Engineering">Engineering</option>
+                  <option value="Sharia">Sharia</option>
+                  <option value="Health Science">Health Science</option>
+                  <option value="Medicine">Medicine</option>
+                </select>
+                <select  id="filter-by-semester">
+                  <option >Filter by Semester</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+                <button class="filter-btn">Filter</button>
+                </div>
+                <!-- Table -->
+                 <table id="student-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Faculty</th>
+                      <th>Semester</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Ibraahim Gaas</td>
+                      <td>ibragaas10@gmail.com</td>
+                      <td>Business and Law</td>
+                      <td>8</td>
+                      <td>
+                        <div class="actions">
+                         <a href="view.html" class="view">View</a>
+                         <span>|</span>
+                         <a href="edit.html" class="edit">Edit</a>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>Nasro Muuse</td>
+                      <td>nasromuuse11@gmail.com</td>
+                      <td>IST</td>
+                      <td>3</td>
+                      <td>
+                        <div class="actions">
+                         <a href="view.html" class="view">View</a>
+                         <span>|</span>
+                         <a href="edit.html" class="edit">Edit</a>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>Abdullahi Muuse</td>
+                      <td>cabdalemuuse87@gmail.com</td>
+                      <td>Sharia and Law</td>
+                      <td>7</td>
+                      <td>
+                       <div class="actions">
+                        <a href="view.html" class="view">View</a>
+                        <span>|</span>
+                        <a href="edit.html" class="edit">Edit</a>
+                       </div>
+                       </td>
+                    </tr>
+                    <tr>
+                      <td>Iqro Abdullahi</td>
+                      <td>ibtisaamnoor976@gmail.com</td>
+                      <td>Health Science</td>
+                      <td>8</td>
+                      <td>
+                       <div class="actions">
+                        <a href="view.html" class="view">View</a>
+                        <span>|</span>
+                        <a href="edit.html" class="edit">Edit</a>
+                       </div>
+                       </td>
+                    </tr>
+                    <tr>
+                      <td>Ahmed Abdiaziz</td>
+                      <td>ahmedlink441@gmail.com</td>
+                      <td>Engineering</td>
+                      <td>5</td>
+                      <td>
+                       <div class="actions">
+                        <a href="view.html" class="view">View</a>
+                        <span>|</span>
+                        <a href="edit.html" class="edit">Edit</a>
+                       </div>
+                       </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    
+          </div>
+        </div>
+      </section>
+     </main>
+    
+ 
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

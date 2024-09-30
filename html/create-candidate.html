@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/create-candidate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <title>Online Voting System</title>
+  </head>
+  <body>
+    <!--  HEADER -->
+    <header>
+      <!-- NAVBAR -->
+      <nav class="container navbar">
+        <!-- Humburger -->
+        <div class="hamburger">
+          <i class="fa-solid fa-bars" data-visible="true"></i>
+          <i class="fa-solid fa-close" data-visible="false"></i>
+        </div>
+        <!-- LOGO -->
+        <div class="logo">
+          <a href="#">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJvZQDhgPT3vKRZDzePwyQ_SJAuB8RIrlcQ&s"
+              alt=""
+            />
+            <div class="text">
+              <h3>EAU</h3>
+              <span>Online Voting</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- NAVLINKS -->
+        <ul class="nav-links" data-visible="false">
+          <li><a href="dashboard.html">Dashborad</a></li>
+          <li><a href="students.html" >Students</a></li>
+          <li><a href="candidates.html">Candidates</a></li>
+          <li><a href="list_elections.html">List Elections</a></li>
+          <li><a href="vote.html">Vote</a></li>  
+          <li><a href="election_results.html">View Results</a></li> 
+          <li><a href="voting_audience.html">Vote Status</a></li> 
+          <li><a href="winner.html">Winner Vote</a></li>
+          <li><a href="profile.html">Profile</a></li> 
+          <li><a href="logout.html">Logout</a></li>    
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main>
+        <section class="new-candidate">
+            <div class="container">
+                <h1>Create New Candidate</h1>
+                <form method="POST" >
+                    <div class="form-group">
+                        <label for="candidate-name">Student:</label>
+                        <select  id="candidate">
+                            <option value="">Select Candidate</option>
+                            <option value="1">Ibraahim Gaas</option>
+                            <option value="2">Ahmed Abdiaziz</option>
+                            <option value="3">Iqro Abullahi</option>
+                            <option value="4">Nacimo Mahamud</option>
+                            <option value="5">Faarah Abdullahi</option>
+                            <option value="6">Abdullahi Muuse</option>
+                            <option value="7">Nasro Muuse</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="election">Election:</label>
+                        <select  id="election">
+                            <option value="">Select Election</option>
+                            <option value="1">Gudoomiyaha Ardayda</option>
+                           
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="party">Position:</label>
+                        <input type="text"  id="position" placeholder="Enter position" required>
+                    </div>
+                       
+                    
+                    <button type="submit">Create</button>
+                     </form>
+                     
+            </div>
+        </section>
+      
+    </main>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

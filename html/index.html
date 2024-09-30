@@ -5,56 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
     <title>Online Voting System</title>
 </head>
 <body>
-        <!--  HEADER -->
-        <header>
-            <!-- NAVBAR -->
-            <nav class="container navbar">
-                <!-- Humburger -->
-                  <div class="hamburger">
-                    <i class="fa-solid fa-bars" data-visible="true"></i>
-                    <i class="fa-solid fa-close" data-visible="false"></i>
-                  </div>
-                  <!-- LOGO -->
-                   <div class="logo">
-                    <a href="#">
-                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJvZQDhgPT3vKRZDzePwyQ_SJAuB8RIrlcQ&s" alt="">
-                        <div class="text">
-                            <h3>EAU</h3>
-                             <span>Online Voting</span>
-                        </div>
-                     </a>
-                   </div>
-                       
-                 <!-- NAVLINKS -->
-                  <ul class="nav-links" data-visible="false"> 
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="login.html" class="login-btn">Login</a></li>
-                    <li><a href="register-voter.html" class="vote-btn">Register as voter</a></li>
-                    <li><a href="register-candidate.html" class="candidate-btn">Register as candidate</a></li>
-    
-                   </ul>
-     
-            </nav>
-        </header>
-        
-        <!-- MAIN SECTION -->
-         <main>
-            <section class="hero">
-                <div class="container"> 
-                    <div class="hero-content">
-                        <h1>Welcome to EAU Online Voting System</h1>
-                        <p> Welcome to Official platform for the East Africa University (EAU) Student Election. This is your opportunity to shape the future of our campus by electing your student leader.</p>
-                        <a href="register-voter.html">Vote Now</a>
+    <!--  HEADER -->
+    <header>
+        <!-- NAVBAR -->
+        <nav class="container navbar">
+            <!-- Humburger -->
+            <div class="hamburger">
+                <i class="fa-solid fa-bars" data-visible="true"></i>
+                <i class="fa-solid fa-close" data-visible="false"></i>
+            </div>
+            <!-- LOGO -->
+            <div class="logo">
+                <a href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJvZQDhgPT3vKRZDzePwyQ_SJAuB8RIrlcQ&s" alt="Logo">
+                    <div class="text">
+                        <h3>EAU</h3>
+                        <span>Online Voting</span>
                     </div>
+                </a>
+            </div>
+            <!-- NAVLINKS -->
+            <ul class="nav-links" data-visible="false">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="candidates.html">Candidates</a></li>
+                <li><a href="list_elections.html">List Elections</a></li>
+                <li><a href="vote.html">Vote</a></li>
+                <li><a href="election_results.html">View Results</a></li>
+                <li><a href="voting_audience.html">Vote Status</a></li>
+                <li><a href="winner.html">Winner Vote</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Welcome to EAU Online Voting System</h1>
+                    <p>Your trusted platform for student elections</p>
+                    <div class="note">
+                        <h3>Important Instructions Before You Log In</h3>
+                        <ul>
+                            <li>Ensure your account is registered with your correct student information.</li>
+                            <li>Only registered students are allowed to vote in the election process.</li>
+                            <li>If you are a candidate, check your profile for additional options.</li>
+                            <li>Read through the election guidelines to understand the voting process.</li>
+                        </ul>
+                    </div>
+                    <a href="login.html">Login</a>
                 </div>
-    
-            </section>
-         </main>
-    
+            </div>
+        </section>
+    </main>
 
     <script src="../js/script.js"></script>
 </body>

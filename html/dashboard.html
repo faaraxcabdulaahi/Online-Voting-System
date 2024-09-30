@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+</head>
+<body>
+    <!--  HEADER -->
+    <header>
+        <!-- NAVBAR -->
+        <nav class="container navbar">
+          <!-- Humburger -->
+          <div class="hamburger">
+            <i class="fa-solid fa-bars" data-visible="true"></i>
+            <i class="fa-solid fa-close" data-visible="false"></i>
+          </div>
+          <!-- LOGO -->
+          <div class="logo">
+            <a href="#">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJvZQDhgPT3vKRZDzePwyQ_SJAuB8RIrlcQ&s"
+                alt=""
+              />
+              <div class="text">
+                <h3>EAU</h3>
+                <span>Online Voting</span>
+              </div>
+            </a>
+          </div>
+  
+          <!-- NAVLINKS -->
+          <ul class="nav-links" data-visible="false">
+            <li><a href="dashboard.html">Dashborad</a></li>
+            <li><a href="students.html" >Students</a></li>
+            <li><a href="candidates.html">Candidates</a></li>
+            <li><a href="list_elections.html">List Elections</a></li>
+            <li><a href="vote.html">Vote</a></li>  
+            <li><a href="election_results.html">View Results</a></li> 
+            <li><a href="voting_audience.html">Vote Status</a></li> 
+            <li><a href="winner.html">Winner Vote</a></li>
+            <li><a href="profile.html">Profile</a></li> 
+            <li><a href="logout.html">Logout</a></li>    
+            </li>
+          </ul>
+        </nav>
+      </header>
+  
+      <!--  MAIN -->
+        <section class="dashboard">
+            <div class="container">
+                <div class="dashboard-content">
+                    <h1>Admin Analytics</h1>
+                    <div class="dashboard-details">
+                        <div class="info total-registered">
+                            <h2>Total Registered</h2>
+                            <p>11</p>
+                        </div>
+                        <div class="info total-vote-cast">
+                            <h2>Total Votes Cast</h2>
+                            <p>1</p>
+                        </div>
+                        <div class="info total-voted">
+                            <h2>Student Engagement (Total Voted)</h2>
+                            <p>9.09%</p>
+                        </div>
+                        <div class="info vote-per-election">
+                            <h2>Votes Per Election</h2>
+                            <ul>
+                                <li>
+                                    <span>Gudoonka Ardayda: <br></span>
+                                    <strong>12 votes</strong>
+                                </li>
+                            </ul>
+                         </div>
+                        <div class="info most-faculty">
+                            <h2>Most Registered Faculty</h2>
+                            <p>Computer (3)</p>
+                        </div>
+                        <div class="info last-30days">
+                            <h2>Votes in the Last 30 Days</h2>
+                            <p></p>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <script src="/js/script.js"></script>
+</body>
+</html>

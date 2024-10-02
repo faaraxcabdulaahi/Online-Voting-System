@@ -86,9 +86,9 @@ header {
     width: 90%;
     max-width: 500px;
     margin-inline: auto;
-    padding-top: 6rem; /* Adjusted to create space below the navbar */
+    padding-top: 4rem; /* Adjusted to create space below the navbar */
     text-align: center;
-    font-family: 'Roboto', sans-serif; 
+    
 }
 
 /* Section content styling */
@@ -165,83 +165,11 @@ a.twitter:hover {
     opacity: 0.9;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    #section-content-container {
-        padding: 20px;
-        margin-top: 16px;
-        border-radius: 12px;
-    }
 
-    h1 {
-        font-size: 22px;
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    h3 {
-        font-size: 16px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    a.facebook,
-    a.twitter {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    #main-content-container {
-        padding-top: 6rem; 
-        max-width: 200px; 
-    }
-
-    #section-content-container {
-        padding: 3px;
-        margin-top: 12px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    h2 {
-        font-size: 16px;
-    }
-
-    h3 {
-        font-size: 14px;
-        margin-bottom: 12px;
-    }
-
-    p {
-        font-size: 12px;
-        margin-bottom: 6px;
-    }
-
-    /* Share buttons on smaller devices */
-    a.facebook,
-    a.twitter {
-        font-size: 12px;
-        padding: 6px 12px;
-        display: flex;
-        flex-direction: column; 
-        margin: 6px auto;
-    }
-}
 /* RESPONSIVE NAVBAR STYLES */
-
 @media (max-width: 768px) {
     header {
-        width: 100%;
-        height: auto;
+        height: auto; /* Allow dynamic height */
     }
 
     .navbar {
@@ -249,7 +177,7 @@ a.twitter:hover {
     }
 
     .hamburger {
-        display: block;
+        display: block; /* Show hamburger menu */
         position: absolute;
         right: 10%;
         cursor: pointer;
@@ -261,11 +189,12 @@ a.twitter:hover {
     }
 
     .nav-links {
+        display: flex; 
+        flex-direction: column; 
+        align-items: flex-start;
         margin-top: 7rem;
         font-size: 1rem;
         width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
         gap: 10px;
         font-weight: 800;
         position: fixed;
@@ -280,11 +209,11 @@ a.twitter:hover {
     }
 
     .nav-links a {
-        margin-left: 2rem;
+        margin-left: 2rem; /* Maintain spacing for links */
     }
 
     .nav-links[data-visible="false"] {
-        transform: translateY(-200%);
+        transform: translateY(-200%); /* Hide off-screen */
     }
 
     .hamburger i[data-visible="true"] {
@@ -298,8 +227,7 @@ a.twitter:hover {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     header {
-        width: 100%;
-        height: auto;
+        height: auto; /* Allow dynamic height */
     }
 
     .navbar {
@@ -307,7 +235,7 @@ a.twitter:hover {
     }
 
     .hamburger {
-        display: block;
+        display: block; /* Show hamburger menu */
         position: absolute;
         right: 10%;
         cursor: pointer;
@@ -319,11 +247,12 @@ a.twitter:hover {
     }
 
     .nav-links {
+        display: flex; /* Display as flex */
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
         margin-top: 7rem;
         font-size: 1rem;
         width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
         gap: 10px;
         font-weight: 800;
         position: fixed;
@@ -338,11 +267,11 @@ a.twitter:hover {
     }
 
     .nav-links a {
-        margin-left: 2rem;
+        margin-left: 2rem; /* Maintain spacing for links */
     }
 
     .nav-links[data-visible="false"] {
-        transform: translateY(-200%);
+        transform: translateY(-200%); /* Hide off-screen */
     }
 
     .hamburger i[data-visible="true"] {

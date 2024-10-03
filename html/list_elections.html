@@ -2,14 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/List election.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <title>Online Voting System</title>
+    <title>List of Elections</title>
   </head>
+
   <body>
     <!--  HEADER -->
     <header>
@@ -52,42 +54,36 @@
         </ul>
       </nav>
     </header>
-
-    <!-- MAIN SECTION -->
     <main>
-      <!-- HERO SECTION -->
-      <section class="hero">
+      <section class="list-election">
         <div class="container">
-          <div class="hero-content">
-            <h1>Welcome to EAU Online Voting System</h1>
-            <p>Your trusted platform for student elections</p>
-            <div class="note">
-              <h3>Important Instructions Before You Log In</h3>
-              <ul>
-                <li>
-                  Ensure your account is registered with your correct student
-                  information.
-                </li>
-                <li>
-                  Only registered students are allowed to vote in the election
-                  process.
-                </li>
-                <li>
-                  If you are a candidate, check your profile for additional
-                  options.
-                </li>
-                <li>
-                  Read through the election guidelines to understand the voting
-                  process.
-                </li>
-              </ul>
-            </div>
-            <a href="login.html">Login</a>
+          <!-- Heading -->
+          <h1 class="heading">List of Elections</h1>
+
+          <!-- Election List -->
+          <ul class="election-list">
+            <li class="election-item">
+              <a href="Update Election.html" class="election-link"
+                >Gudoomiyaha Ardayda</a
+              >
+              <div class="actions">
+                <a href="vote.html" class="btn vote-btn">Vote</a>
+                <form method="post" action="#">
+                  <button type="submit" class="btn delete-btn">Delete</button>
+                </form>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Create New Election Button -->
+          <div class="new-election">
+            <a href="Create_new_Election.html" class="btn create-btn"
+              >Create New Election</a
+            >
           </div>
         </div>
       </section>
     </main>
-
     <script src="../js/script.js"></script>
   </body>
 </html>

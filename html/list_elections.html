@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/List election.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>List of Elections</title>
+  </head>
+
+  <body>
+    <!--  HEADER -->
+    <header>
+      <!-- NAVBAR -->
+      <nav class="container navbar">
+        <!-- Humburger -->
+        <div class="hamburger">
+          <i class="fa-solid fa-bars" data-visible="true"></i>
+          <i class="fa-solid fa-close" data-visible="false"></i>
+        </div>
+        <!-- LOGO -->
+        <div class="logo">
+          <a href="#">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJvZQDhgPT3vKRZDzePwyQ_SJAuB8RIrlcQ&s"
+              alt="Logo"
+            />
+            <div class="text">
+              <h3>EAU</h3>
+              <span>Online Voting</span>
+            </div>
+          </a>
+        </div>
+        <!-- NAVLINKS -->
+        <ul class="nav-links" data-visible="false">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="students.html">Students</a></li>
+          <li><a href="candidates.html">Candidates</a></li>
+          <li><a href="list_elections.html">List Elections</a></li>
+          <li><a href="vote.html">Vote</a></li>
+          <li><a href="election_results.html">View Results</a></li>
+          <li><a href="voting_audience.html">Vote Status</a></li>
+          <li>
+            <a href="../components/winner_vote.html" target="_blank"
+              >Winner Vote</a
+            >
+          </li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="logout.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="list-election">
+        <div class="container">
+          <!-- Heading -->
+          <h1 class="heading">List of Elections</h1>
+
+          <!-- Election List -->
+          <ul class="election-list">
+            <li class="election-item">
+              <a href="Update Election.html" class="election-link"
+                >Gudoomiyaha Ardayda</a
+              >
+              <div class="actions">
+                <a href="vote.html" class="btn vote-btn">Vote</a>
+                <form method="post" action="#">
+                  <button type="submit" class="btn delete-btn">Delete</button>
+                </form>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Create New Election Button -->
+          <div class="new-election">
+            <a href="Create_new_Election.html" class="btn create-btn"
+              >Create New Election</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

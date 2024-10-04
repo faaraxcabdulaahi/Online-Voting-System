@@ -81,23 +81,56 @@ header {
     display: none;
 }
 
-
-/* CONTENT */
-#content-container{
+#status-section{
     width: 100%;
-    max-width: 300px;
-    margin-inline:auto;
+    max-width: 500px;
+    margin-inline: auto;
     margin-top: 10rem;
 }
-#content-box{
-    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2);
+#status-section h1{
+    margin-bottom: 8px;
+    color: #1c64f2;
+    font-size: 36px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+#status-section #status-content{
+    background-color: #ffff;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.1);
     padding: 20px;
     border-radius: 10px;
 }
-#content-box p{
-    font-size: 17px;
-    color: #374151;
-    line-height: 1.5;
+#status-section #status-content p{
+    font-size: 26px;
+    margin-bottom: 7px;
+ 
+}
+.remaining-time {
+    background-color: #fef2f2; 
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.remaining-time .time {
+    color: #dc2626; 
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #e5e7eb; 
+    border-radius: 5px;
+    height: 10px;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.progress-bar .progress {
+    background-color: #6d28d9;
+    height: 100%;
+    width: 30%; 
+    border-radius: 5px;
 }
 
 /* RESPONSIVE NAVBAR STYLES */

@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Status</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <script src="../js/script.js" defer></script>
-    <link rel="stylesheet" href="profile.css">
-    <title>Profile</title>
+    <link rel="stylesheet" href="voting_status.css">
 </head>
 <body>
-    <!-- NAVBARS -->
-    <header>
+     <!-- NAVBARS -->
+     <header>
         <nav class="container navbar">
           <!-- Humburger -->
           <div class="hamburger">
@@ -41,22 +41,28 @@
             <li><a href="../repo/list_elections.html">List Elections</a></li>
             <li><a href="vote.html">Vote</a></li>
             <li><a href="election_results.html">View Results</a></li>
-            <li><a href="../components/voting_status.html">Vote Status</a></li>
+            <li><a href="voting_status.html">Vote Status</a></li>
             <li><a href="winner_vote.html">Winner Vote</a></li>
             <li><a href="profile.html">Profile</a></li>
             <li><a href="logout.html">Logout</a></li>
           </ul>
         </nav>
       </header>
-
-      <!-- Content -->
-    <section id="content-container">
-        <div id="content-box">
-            <p>Name: Axmed Cabdicasiis</p>
-            <p>Faculty: Computer Science</p>
-            <p>semester: 5</p>
-            <p>You are logged in successsfuly</p>
+    <!-- MAIN CONTENT -->
+   <section id="status-section">
+    <h1>Voting Status for Guddonka</h1>
+    <div id="status-content">
+        <p><strong>Election Start:</strong> 2024-10-01 01:06</p>
+        <p><strong>Election End:</strong> 2024-10-18 03:06</p>
+        <p><strong>Total Eligible Voters:</strong> 12</p>
+        <p><strong>Votes Cast:</strong> 3</p>
+        <div class="remaining-time">
+            <p><strong>Remaining Time:</strong> <span class="time">322h 42m 2s</span></p>
         </div>
-    </section>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+   </section>
 </body>
 </html>

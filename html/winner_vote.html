@@ -4,18 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/js/script.js" defer></script>
-    <link rel="stylesheet" href="/css/view.css" />
+    <link rel="stylesheet" href="/css/winner_vote.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-
-    <title>Online Voting System</title>
+    <title>Winner vote</title>
   </head>
   <body>
-    <!--  HEADER -->
+    <!-- NAVBARS -->
     <header>
-      <!-- NAVBAR -->
       <nav class="container navbar">
         <!-- Humburger -->
         <div class="hamburger">
@@ -27,7 +25,7 @@
           <a href="#">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJvZQDhgPT3vKRZDzePwyQ_SJAuB8RIrlcQ&s"
-              alt=""
+              alt="Logo"
             />
             <div class="text">
               <h3>EAU</h3>
@@ -35,7 +33,6 @@
             </div>
           </a>
         </div>
-
         <!-- NAVLINKS -->
         <ul class="nav-links" data-visible="false">
           <li><a href="dashboard.html">Dashboard</a></li>
@@ -51,31 +48,25 @@
         </ul>
       </nav>
     </header>
-
-    <!-- MAIN SECTION -->
- <main>
-    <section>
-        <div class="container">
-            <div class="student-details">
-                <h1>Student Details: Nasro Muuse</h1>
-                <div class="student-info">
-                    <p>
-                        <strong>Email:</strong> nasromuuse11@gmail.com
-                    </p>
-                    <p>
-                        <strong>Faculty:</strong> IST
-                    </p>
-                    <p>
-                        <strong>Semester:</strong> 5
-                    </p>
-                </div>
-                <a href="edit.html">Edit Student</a>
-            </div>
+    <!-- CONTENT -->
+    <div id="main-content-container">
+      <h1 class="text-xl">🎉 Election Winner for Guddonka 🎉</h1>
+      <div id="section-content-container">
+        <div id="sub-content-container">
+          <h2 class="text-lg">Conguralations to the Winner</h2>
+          <h3 class="text-md">Winner : Nasro</h3>
+          <p>Votes Received: <strong>1</strong></p>
+          <p>Position: <strong>Gudoomiye</strong></p>
+          <p>Election Date: October 1, 2024 to <strong>October 18, 2024</strong></p>
+          <p>Faculty: <strong>Cs</strong></p>
+          <p>Semester: 8</p>
         </div>
-    </section>
- </main>        
- 
-
-    <script src="../js/script.js"></script>
+        <div id="sub-footer-container">
+          <p>Share this achievement:</p>
+          <a href="#" class="facebook">Share on Facebook</a>
+          <a href="#" class="twitter">Share on Twitter</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

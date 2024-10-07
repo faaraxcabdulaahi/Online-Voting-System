@@ -56,161 +56,165 @@
     <script src="../js/script.js"></script>
 
     <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
-      rel="stylesheet"
-    />
-    <title>View Results</title>
-  </head>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+          rel="stylesheet"
+        />
+        <link
+          href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+          rel="stylesheet"
+        />
+        <title>View Results</title>
+      </head>
 
-  <body>
-    <!-- templates/nav.html -->
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
-        <!-- Toggle button for mobile view -->
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
+      <body>
+        <!-- templates/nav.html -->
+        <nav class="bg-red border-gray-200 dark:bg-gray-900">
+          <div
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
           >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d=""
-            />
-          </svg>
-        </button>
-      </div>
-    </nav>
-      <div class="max-w-6xl mx-auto py-12">
-        <!-- Title -->
-        <h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">
-          Election Results for Guddonka
-        </h1>
-
-        <!-- Action Buttons -->
-        <div class="mb-6 text-center no-print">
-          <button
-            onclick="printPage()"
-            class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
-          >
-            Print Results
-          </button>
-          <a
-            href="/export_election_csv/10/"
-            class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded ml-2"
-            >Export CSV</a
-          >
-          <a
-            href="/export_election_pdf/10/"
-            class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded ml-2"
-            >Export PDF</a
-          >
-        </div>
-
-        <!-- Results Table -->
-        <div class="result-box">
-          <div class="overflow-x-auto">
-            <table class="min-w-full bg-white divide-y divide-gray-200">
-              <thead class="bg-gray-100">
-                <tr>
-                  <th
-                    class="py-4 px-6 text-left text-gray-600 uppercase text-sm font-semibold"
-                  >
-                    Candidate
-                  </th>
-                  <th
-                    class="py-4 px-6 text-center text-gray-600 uppercase text-sm font-semibold"
-                  >
-                    Votes
-                  </th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-gray-200">
-                <tr class="hover:bg-gray-50">
-                  <td class="py-4 px-6 text-left text-gray-800"></td>
-                  <td class="py-4 px-6 text-center text-gray-800"></td>
-                </tr>
-
-                <tr class="hover:bg-gray-50">
-                  <td class="py-4 px-6 text-left text-gray-800"></td>
-                  <td class="py-4 px-6 text-center text-gray-800"></td>
-                </tr>
-              </tbody>
-            </table>
+            <!-- Toggle button for mobile view -->
+            <button
+              data-collapse-toggle="navbar-default"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-default"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d=""
+                />
+              </svg>
+            </button>
           </div>
-        </div>
+        </nav>
+        
+        
+          <div class="max-w-6xl mx-auto py-12">
+            <!-- Title -->
+            <h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">
+              Election Results for Guddonka
+            </h1>
 
-        <!-- Chart Section -->
-        <div class="chart-box">
-          <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">
-            Vote Distribution
-          </h2>
-          <canvas id="resultsChart" width="400" height="200"></canvas>
-          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <!-- Action Buttons -->
+            <div class="mb-6 text-center no-print">
+              <button
+                onclick="printPage()"
+                class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
+              >
+                Print Results
+              </button>
+              <a
+                href="/export_election_csv/10/"
+                class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded ml-2"
+                >Export CSV</a
+              >
+              <a
+                href="/export_election_pdf/10/"
+                class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded ml-2"
+                >Export PDF</a
+              >
+            </div>
+
+            <!-- Results Table -->
+            <div class="result-box">
+              <div class="overflow-x-auto">
+                <table class="min-w-full bg-white divide-y divide-gray-200">
+                  <thead class="bg-gray-100">
+                    <tr>
+                      <th
+                        class="py-4 px-6 text-left text-gray-600 uppercase text-sm font-semibold"
+                      >
+                        Candidate
+                      </th>
+                      <th
+                        class="py-4 px-6 text-center text-gray-600 uppercase text-sm font-semibold"
+                      >
+                        Votes
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody class="divide-y divide-gray-200">
+                    <tr class="hover:bg-gray-50">
+                      <td class="py-4 px-6 text-left text-gray-800"></td>
+                      <td class="py-4 px-6 text-center text-gray-800"></td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50">
+                      <td class="py-4 px-6 text-left text-gray-800"></td>
+                      <td class="py-4 px-6 text-center text-gray-800"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Chart Section -->
+            <div class="chart-box">
+              <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">
+                Vote Distribution
+              </h2>
+              <canvas id="resultsChart" width="400" height="200"></canvas>
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              <script>
+                var ctx = document
+                  .getElementById("resultsChart")
+                  .getContext("2d");
+                var chart = new Chart(ctx, {
+                  type: "bar",
+                  data: {
+                    labels: ["", ""],
+                    datasets: [
+                      {
+                        label: "Votes",
+                        data: [],
+                        backgroundColor: "rgba(75, 192, 192, 0.4)",
+                        borderColor: "rgba(75, 192, 192, 1)",
+                        borderWidth: 1,
+                      },
+                    ],
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true,
+                      },
+                    },
+                  },
+                });
+              </script>
+            </div>
+          </div>
+
+          <!-- JavaScript for Print Button -->
           <script>
-            var ctx = document.getElementById("resultsChart").getContext("2d");
-            var chart = new Chart(ctx, {
-              type: "bar",
-              data: {
-                labels: ["", ""],
-                datasets: [
-                  {
-                    label: "Votes",
-                    data: [],
-                    backgroundColor: "rgba(75, 192, 192, 0.4)",
-                    borderColor: "rgba(75, 192, 192, 1)",
-                    borderWidth: 1,
-                  },
-                ],
-              },
-              options: {
-                scales: {
-                  y: {
-                    beginAtZero: true,
-                  },
-                },
-              },
-            });
+            function printPage() {
+              window.print();
+            }
           </script>
-        </div>
-      </div>
-
-      <!-- JavaScript for Print Button -->
-      <script>
-        function printPage() {
-          window.print();
-        }
-      </script>
-    </main>
-
-    <!-- Add custom scripts here if needed -->
-
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-    <script src="../css/View-Results.css"></script>
+        </main>
+        
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+        <script src="../css/View-Results.css"></script>
+      </body>
+    </html>
   </body>
 </html>
-

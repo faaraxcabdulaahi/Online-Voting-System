@@ -1,17 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/view_results.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <title>Online Voting System</title>
-  </head>
-  <body>
-    <!--  HEADER -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+          rel="stylesheet"
+        />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      />
+        <link
+          href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/view_results.css">
+        <title>View Results</title>
+      </head>
+
+      <body>
+         <!--  HEADER -->
     <header>
       <!-- NAVBAR -->
       <nav class="container navbar">
@@ -40,72 +51,16 @@
           <li><a href="candidates.html">Candidates</a></li>
           <li><a href="list_elections.html">List Elections</a></li>
           <li><a href="vote.html">Vote</a></li>
-          <li><a href="election_results.html">View Results</a></li>
-          <li><a href="voting_audience.html">Vote Status</a></li>
-          <li>
-            <a href="../components/winner_vote.html" target="_blank"
-              >Winner Vote</a
-            >
-          </li>
+          <li><a href="../html/view_results.html">View Results</a></li>
+          <li><a href="voting_status.html">Vote Status</a></li>
+          <li><a href="winner_vote.html">Winner Vote</a></li>
           <li><a href="profile.html">Profile</a></li>
-          <li><a href="logout.html">Logout</a></li>
+          <li><a href="index.html">Logout</a></li>
         </ul>
       </nav>
     </header>
 
-    <script src="../js/script.js"></script>
 
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-          href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-          rel="stylesheet"
-        />
-        <link
-          href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
-          rel="stylesheet"
-        />
-        <title>View Results</title>
-      </head>
-
-      <body>
-        <!-- templates/nav.html -->
-        <nav class="bg-red border-gray-200 dark:bg-gray-900">
-          <div
-            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-          >
-            <!-- Toggle button for mobile view -->
-            <button
-              data-collapse-toggle="navbar-default"
-              type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-default"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d=""
-                />
-              </svg>
-            </button>
-          </div>
-        </nav>
-        
         
           <div class="max-w-6xl mx-auto py-12">
             <!-- Title -->
@@ -213,7 +168,7 @@
         </main>
         
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-        <script src="../css/View-Results.css"></script>
+        <script src="../js/script.js"></script>
       </body>
     </html>
   </body>
